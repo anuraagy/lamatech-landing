@@ -114,6 +114,7 @@
 
 .top {
   left: 30%;
+  z-index: 1;
 }
 
 .bottom {
