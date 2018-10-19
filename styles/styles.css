@@ -80,6 +80,20 @@ input {
   width: 66%;
 }
 
+.hero-image {
+  z-index: -2;
+  position: absolute;
+  top: 210px;
+  right: 0;
+}
+
+.hero-logo {
+  z-index: -1;
+  position: absolute;
+  top: 110px;
+  right: 400px;
+}
+
 .hero-text {
   font-size: 2.8rem;
 }
@@ -105,8 +119,7 @@ input {
 
 .footer {
   background: #6657B0;
-  height: 300px;
-  padding: 30px;
+  padding: 30px 50px 100px 30px;
 }
 
 .signup {
@@ -194,4 +207,28 @@ input {
   margin-right: auto; 
 }
 
+.footer-info {
+  padding: 0px 100px;
+  margin-top: 120px;
+}
 
+.footer-logo {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.footer-compliance-item {
+  opacity: 0.75;
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 0.8rem;
+}
