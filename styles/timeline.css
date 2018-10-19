@@ -18,9 +18,10 @@
   width: 3px;
   background-color: white;
   top: 0;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   margin-left: -3px;
+  margin-top: 120px;
 }
 
 /* Container around timeline-content */
@@ -42,6 +43,48 @@
   border: 2px solid white;
   top: 15px;
   border-radius: 50%;
+  z-index: 1;
+}
+
+
+.top-timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+  text-align: center;
+}
+
+.top-timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #5054B5;
+  border: 2px solid white;
+  border-radius: 50%;
+  bottom: -5px;
+  left: 46.7%;
+  z-index: 1;
+}
+
+.bottom-timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+}
+
+.bottom-timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #5054B5;
+  border: 2px solid white;
+  border-radius: 50%;
+  top: -5px;
+  left: 46.7%;
   z-index: 1;
 }
 
@@ -68,6 +111,16 @@
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
 }
+
+.top {
+  left: 30%;
+}
+
+.bottom {
+  left: 30%;
+  z-index: 1;
+}
+
 
 /* Add arrows to the right timeline-container (pointing left) */
 .right::before {
@@ -118,10 +171,42 @@
     border-color: transparent white transparent transparent;
   }
 
+  /* Full-width timeline-containers */
+  .top-timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .top-timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+   /* Full-width timeline-containers */
+  .bottom-timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .bottom-timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
 /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
+  .left::after, .right::after, .top::after , .bottom::after {
     left: 15px;
   }
+
+
 
 /* Make all right timeline-containers behave like the left ones */
   .right {
@@ -129,6 +214,14 @@
   }
 
   .left {
+    left: 0%;
+  }
+
+  .top {
+    left: 0%;
+  }
+
+  .bottom {
     left: 0%;
   }
 }
