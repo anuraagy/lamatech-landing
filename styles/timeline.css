@@ -226,3 +226,11 @@
     left: 0%;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .timeline-content {
+    font-size: 0.8rem;
+  }
+
+}
+
