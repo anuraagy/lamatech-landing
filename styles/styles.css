@@ -233,9 +233,26 @@ input {
   float: right;
 }
 
+.social {
+  position: relative;
+}
+
+.social-content {
+  height: 200px;
+  background: #C37ED5;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  padding: 50px;
+}
+
 .footer-compliance-item {
   opacity: 0.75;
   display: inline-block;
   margin-right: 25px;
   font-size: 0.8rem;
+}
+
+.fa {
+  margin-right: 15px;
 }
