@@ -27,13 +27,29 @@ input {
   border: 0;
 }
 
+.submit {
+  font-family: 'Muli', sans-serif;
+}
+
 .container {
   font-family: 'Muli', sans-serif;
 }
 
 .content {
-  padding: 30px 50px;
   margin-bottom: 50px;
+}
+
+.header {
+  margin: 30px 120px 0px 120px;
+  margin-bottom: -90px;
+}
+
+.header-input {
+  width: 100%;
+}
+
+.header-email {
+  width: 50%;
 }
 
 .btn {
@@ -44,8 +60,13 @@ input {
   font-size: 1.2rem;
 }
 
+.navbar-button {
+  padding: 5px 20px;
+  background: #C37ED5;
+}
+
 .navbar {
-  padding: 30px 50px;
+  padding: 30px 120px;
   height: 150px;
   width: 100%;
   display: inline-block;
@@ -67,7 +88,8 @@ input {
   display: inline-block;
   margin-right: 25px;
   margin-top: 8px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .navbar-link:hover {
@@ -86,23 +108,78 @@ input {
   position: absolute;
   top: 210px;
   right: 0;
-  height: 600px;
+  height: 480px;
 }
 
 .hero-logo {
   z-index: -1;
   position: absolute;
-  top: 110px;
-  right: 400px;
-  height: 120px;
+  top: 115px;
+  right: 275px;
+  height: 100px;
+}
+
+.bridge-divider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.phone1 {
+  position: absolute;
+  right: 90px;
+}
+
+.phone2 {
+  position: absolute;
+  top: -50px;
+  right: -120px;
+  z-index: 10000;
+}
+
+.what-we-do {
+  text-align: left;
+  font-weight: 300 !important;
+  height: 400px;
+  margin-top: 80px;
+  margin: 80px 120px;
+}
+
+.what-we-do-images {
+  width: 40%;
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.what-we-do-content {
+  width: 55%;
+  display: inline-block;
+
+}
+
+.what-we-do-content h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.what-we-do-content p {
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
 .hero-text {
   font-size: 2.8rem;
+  font-weight: 300;
+  margin-bottom: 15px;
 }
 
 .hero-subtext {
   width: 90%;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .hero-buttons {

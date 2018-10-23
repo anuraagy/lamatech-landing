@@ -9,6 +9,8 @@
   margin: 0 auto;
   margin-top: 100px;
   color: black;
+  margin: 150px 120px;
+  margin-top: 200px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -144,10 +146,12 @@
 
 /* The actual timeline-content */
 .timeline-content {
-  padding: 20px 30px;
+  padding: 10px 60px;
+  padding-bottom: 20px;
   background-color: white;
   position: relative;
   border-radius: 6px;
+  font-size: 0.8rem;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
