@@ -249,8 +249,12 @@
   }
 
   .top:after, .left:after, .right:after, .bottom:after {
+    /*left: 45%;*/
+
     display: none;
   }
+
+  .top:after {}
 
   .timeline-container {
     padding-left: 0px;

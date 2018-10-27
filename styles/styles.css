@@ -87,7 +87,7 @@ input {
 .navbar-link {
   display: inline-block;
   margin-left: 25px;
-  margin-top: 8px;
+  margin-top: 0px;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -252,7 +252,8 @@ input {
 
 .contact-item {
   display: inline-block;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .contact-item-text {
@@ -335,7 +336,8 @@ input {
 .footer-compliance-item {
   opacity: 0.75;
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
   font-size: 0.8rem;
 }
 
@@ -428,6 +430,20 @@ input {
   }
 }
 
+@media screen and (max-width: 1055px) {
+  .phone1 {
+    display: none;
+  }
+
+  .what-we-do-content {
+    width: 80%;
+  }
+
+  .what-we-do-images {
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .footer-links, .footer-info {
     padding: 0px 50px;
@@ -445,12 +461,12 @@ input {
     padding: 0px 30px;
   }
 
-  .phone1 {
+  .what-we-do-images {
     display: none;
   }
 
-  .phone2 {
-    display: none;
+  .what-we-do-content {
+    width: 100%
   }
 
   .bridge-divider {
@@ -592,7 +608,8 @@ input {
 
   .contact-item {
     width: 45%;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     display: inline-block;
   }
 
@@ -604,7 +621,8 @@ input {
 
   .sitemap-item {
     text-align: center;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .footer-links, .footer-info {
@@ -666,5 +684,21 @@ input {
 
   .contact-item {
     font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-header {
+    font-size: 1.5rem;
+  }
+
+  .navbar-link {
+    font-size: 0.7rem;
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+
+  .header-email {
+    width: 64%;
   }
 }
