@@ -230,16 +230,50 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
   .timeline-content {
-    font-size: 0.5rem;
-    padding: 10px 10px;
-    width: 250px;
+    font-size: 0.8rem;
+    padding: 25px 25px;
+    width: 100%;
   }
 
   .timeline {
     padding: 0px 30px;
     margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  .timeline:after {
+    left: 50%;
+    z-index: -1;
+  }
+
+  .top:after, .left:after, .right:after, .bottom:after {
+    display: none;
+  }
+
+  .timeline-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .fa-newspaper-o {
+    left: -60px;
+    font-size: 2.5rem !important;
+  }
+
+  .process-text {
+    font-size: 2rem;
+  }
+
+  .top-timeline-container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .bottom-timeline-container {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
 }

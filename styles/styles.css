@@ -86,7 +86,7 @@ input {
 
 .navbar-link {
   display: inline-block;
-  margin-right: 25px;
+  margin-left: 25px;
   margin-top: 8px;
   font-size: 1.5rem;
   font-weight: 400;
@@ -100,7 +100,7 @@ input {
 
 .hero {
   height: 500px;
-  width: 65%;
+  width: 80%;
 }
 
 .hero-image {
@@ -352,6 +352,11 @@ input {
   top: -3px;
 }
 
+#login {
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
 .logo-info {
   position: relative;
   margin-left: 15%;
@@ -449,7 +454,7 @@ input {
   }
 
   .bridge-divider {
-    height: 0px;
+    margin-top: 50px;
   }
 
   .hero-image {
@@ -473,14 +478,16 @@ input {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
 
   .header, .what-we-do {
     padding: 30px 30px;
+    padding-top: 0px;
   }
 
   .what-we-do {
     margin-bottom: 20px;
+    margin-top: 0px;
     height: 300px;
   }
 
@@ -495,7 +502,7 @@ input {
 
   .what-we-do-content p {
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .navbar {
@@ -503,16 +510,22 @@ input {
   }
 
   .navbar-links {
-    width: 100%;
+    width: initial;
   }
 
   .navbar-link {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-left: 13px;
+    margin-top: 5px;
+  }
+
+  .header {
+    padding-top: 0px;
   }
 
   .hero {
     width: 100%;
-    height: 300px;
+    /*height: 300px;*/
   }
 
   .hero-text {
@@ -522,14 +535,20 @@ input {
   .hero-subtext {
     font-size: 1rem;
     line-height: 1.5rem;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .header-email {
+    width: 70%;
   }
 
   .hero-image {
-    height: 0px;
+    display: none;
   }
 
   .hero-logo {
-    height: 0px;
+    display: none;
   }
 
   .navbar {
@@ -643,5 +662,9 @@ input {
     position: absolute;
     left: -35px;
     top: -3px;
+  }
+
+  .contact-item {
+    font-size: 0.75rem;
   }
 }
