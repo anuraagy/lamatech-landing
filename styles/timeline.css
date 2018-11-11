@@ -5,7 +5,7 @@
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   margin-top: 100px;
   color: black;
@@ -145,11 +145,10 @@
 
 /* The actual timeline-content */
 .timeline-content {
-  padding: 10px 60px;
+  padding: 10px 40px;
   padding-bottom: 20px;
   background-color: white;
   position: relative;
-  border-radius: 6px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
