@@ -231,8 +231,10 @@
 @media screen and (max-width: 500px) {
   .timeline-content {
     font-size: 0.8rem;
-    padding: 25px 25px;
+    padding: 15px 25px;
     width: 100%;
+    text-align: center;
+    box-shadow: 3px 3px 3px grey;
   }
 
   .timeline {
